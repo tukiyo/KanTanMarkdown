@@ -5,12 +5,23 @@
  * また、CSSの変更はプレビューしないと反映しません。
  */
  
+#leftNav {
+    display: visible;
+}
+#rightNav {
+    display: visible;
+}
+.previewMode #leftNav {
+    display: none;
+}
+.previewMode #rightNav {
+    display: none;
+}
 .previewMode #previewer {
-    width: 980px;
+
 }
 #previewer {
     word-wrap: break-word;
-    border: 1px solid gray;
     font-family: Helvetica, arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
