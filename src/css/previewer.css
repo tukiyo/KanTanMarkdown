@@ -20,17 +20,6 @@
 .previewMode #previewer {
 }
 
-@media (max-width: 770px) {
-    #previewer {
-        width:80vw
-    }
-}
-@media (max-width: 480px) {
-    #previewer {
-        width:95vw
-    }
-}
-
 #previewer {
     min-height: 97%;
     max-width: 800px;

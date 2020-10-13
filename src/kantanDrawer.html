@@ -7,10 +7,10 @@
 	<dl>
 		<dt>モード</dt>
 		<dd class="mode">
-			<button name="rectangleModeButton">Rectangle</button>
-			<button name="letterModeButton">Letter</button>
-			<button name="eraserModeButton">Eraser</button>
-			<button name="trimModeButton">Trim</button>
+			<button name="rectangleModeButton">四角</button>
+			<button name="letterModeButton">文字</button>
+			<button name="eraserModeButton">消しゴム</button>
+			<button name="trimModeButton">切り抜き</button>
 		</dd>
 		
 		<dt>枠の太さ</dt>
@@ -22,6 +22,7 @@
 		<dt>枠の色</dt>
 		<dd class="borderColor clearfix">
 			<button class="color color9" name="c_ff0000">　</button>
+			<button class="color color9" name="c_0000ff">　</button>
 			<button class="color color9" name="c_34A853">　</button>
 			<button class="color color9" name="c_000000">　</button>
 			<button class="color color9" name="c_ffffff">　</button>
@@ -32,6 +33,7 @@
 		<dt>塗りつぶしの色</dt>
 		<dd class="fillColor clearfix">
 			<button class="color color9" name="c_ff0000">　</button>
+			<button class="color color9" name="c_0000ff">　</button>
 			<button class="color color9" name="c_34A853">　</button>
 			<button class="color color9" name="c_000000">　</button>
 			<button class="color color9" name="c_ffffff">　</button>
@@ -52,15 +54,15 @@
 		
 		<dt>編集</dt>
 		<dd>
-			<button name="undoButton" class="float50">←Undo</button>
-			<button name="redoButton" class="float50">Redo→</button>
-			<button name="resetButton">Reset</button>
+			<button name="undoButton" class="float50" accesskey="z">←戻す(z)</button>
+			<button name="redoButton" class="float50" accesskey="y">(y)進む→</button>
+			<button name="resetButton" accesskey="r">編集前に戻す(r)</button>
 		</dd>
 		
 		<dt>ファイル</dt>
 		<dd>
-			<button name="saveButton">Save</button>
-			<button name="cancelButton">Cancel</button>
+			<button name="saveButton" accesskey="s">保存して終了(s)</button>
+			<button name="cancelButton" accesskey="q">保存せずに終了(q)</button>
 		</dd>
 	</dl>
 </div>

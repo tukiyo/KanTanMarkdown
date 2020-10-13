@@ -79,11 +79,12 @@
 	padding:0;
 }
 
-#drawArea .color[name=c_ff0000] { background-color:#ff0000; }
+#drawArea .color[name=c_ff0000] { background-color:red; }
+#drawArea .color[name=c_0000ff] { background-color:blue; }
 #drawArea .color[name=c_34A853] { background-color:#34A853; }
-#drawArea .color[name=c_000000] { background-color:#000000; }
-#drawArea .color[name=c_ffffff] { background-color:#ffffff; }
-#drawArea .color[name=c_clear]  { background-color:#ffffff; }
+#drawArea .color[name=c_000000] { background-color:black; }
+#drawArea .color[name=c_ffffff] { background-color:white; }
+#drawArea .color[name=c_clear]  { background-color:white; }
 
 #drawArea .clearfix:after {
 	content: "."; 

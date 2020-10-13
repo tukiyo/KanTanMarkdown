@@ -368,11 +368,12 @@ nav:after {
 	padding:0;
 }
 
-#drawArea .color[name=c_ff0000] { background-color:#ff0000; }
+#drawArea .color[name=c_ff0000] { background-color:red; }
+#drawArea .color[name=c_0000ff] { background-color:blue; }
 #drawArea .color[name=c_34A853] { background-color:#34A853; }
-#drawArea .color[name=c_000000] { background-color:#000000; }
-#drawArea .color[name=c_ffffff] { background-color:#ffffff; }
-#drawArea .color[name=c_clear]  { background-color:#ffffff; }
+#drawArea .color[name=c_000000] { background-color:black; }
+#drawArea .color[name=c_ffffff] { background-color:white; }
+#drawArea .color[name=c_clear]  { background-color:white; }
 
 #drawArea .clearfix:after {
 	content: "."; 
@@ -431,17 +432,6 @@ nav:after {
     display: none;
 }
 .previewMode #previewer {
-}
-
-@media (max-width: 770px) {
-    #previewer {
-        width:80vw
-    }
-}
-@media (max-width: 480px) {
-    #previewer {
-        width:95vw
-    }
 }
 
 #previewer {
@@ -996,10 +986,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 	<dl>
 		<dt>モード</dt>
 		<dd class="mode">
-			<button name="rectangleModeButton">Rectangle</button>
-			<button name="letterModeButton">Letter</button>
-			<button name="eraserModeButton">Eraser</button>
-			<button name="trimModeButton">Trim</button>
+			<button name="rectangleModeButton">四角</button>
+			<button name="letterModeButton">文字</button>
+			<button name="eraserModeButton">消しゴム</button>
+			<button name="trimModeButton">切り抜き</button>
 		</dd>
 		
 		<dt>枠の太さ</dt>
@@ -1011,6 +1001,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 		<dt>枠の色</dt>
 		<dd class="borderColor clearfix">
 			<button class="color color9" name="c_ff0000">　</button>
+			<button class="color color9" name="c_0000ff">　</button>
 			<button class="color color9" name="c_34A853">　</button>
 			<button class="color color9" name="c_000000">　</button>
 			<button class="color color9" name="c_ffffff">　</button>
@@ -1021,6 +1012,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 		<dt>塗りつぶしの色</dt>
 		<dd class="fillColor clearfix">
 			<button class="color color9" name="c_ff0000">　</button>
+			<button class="color color9" name="c_0000ff">　</button>
 			<button class="color color9" name="c_34A853">　</button>
 			<button class="color color9" name="c_000000">　</button>
 			<button class="color color9" name="c_ffffff">　</button>
@@ -1041,15 +1033,15 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 		
 		<dt>編集</dt>
 		<dd>
-			<button name="undoButton" class="float50">←Undo</button>
-			<button name="redoButton" class="float50">Redo→</button>
-			<button name="resetButton">Reset</button>
+			<button name="undoButton" class="float50" accesskey="z">←戻す(z)</button>
+			<button name="redoButton" class="float50" accesskey="y">(y)進む→</button>
+			<button name="resetButton" accesskey="r">編集前に戻す(r)</button>
 		</dd>
 		
 		<dt>ファイル</dt>
 		<dd>
-			<button name="saveButton">Save</button>
-			<button name="cancelButton">Cancel</button>
+			<button name="saveButton" accesskey="s">保存して終了(s)</button>
+			<button name="cancelButton" accesskey="q">保存せずに終了(q)</button>
 		</dd>
 	</dl>
 </div>
@@ -2984,12 +2976,9 @@ function KantanDrawer (drawArea) {
 	/* cancel */
 	var cancelButton = drawArea.querySelector("[name=cancelButton]");
 	on(cancelButton, "click", function() {
-		var confirm = window.confirm("キャンセルしてもいいですか？編集内容は失われます。");
-		if (confirm == true) {
-			that.reset();
-			that.hide();
-			that.cancelCallback();
-		}
+		that.reset();
+		that.hide();
+		that.cancelCallback();
 	});
 
 	/* モード制御 */

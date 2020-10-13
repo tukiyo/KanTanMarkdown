@@ -148,12 +148,9 @@ function KantanDrawer (drawArea) {
 	/* cancel */
 	var cancelButton = drawArea.querySelector("[name=cancelButton]");
 	on(cancelButton, "click", function() {
-		var confirm = window.confirm("キャンセルしてもいいですか？編集内容は失われます。");
-		if (confirm == true) {
-			that.reset();
-			that.hide();
-			that.cancelCallback();
-		}
+		that.reset();
+		that.hide();
+		that.cancelCallback();
 	});
 
 	/* モード制御 */
