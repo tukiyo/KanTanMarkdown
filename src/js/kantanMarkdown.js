@@ -327,10 +327,10 @@
 
 	// エディタに変化があったらプレビュー予約
 	on("#editor", "change", queuePreview);
-	on("#editor", "keyup", queuePreview);
+	on("#editor", "keydown", queuePreview);
 	
 	// 自動更新がONならプレビューする
-	// ただし、onkeyupなど呼ばれる頻度が高いので一定時間待って最後の呼び出しのみ実行する
+	// ただし、onkeydownなど呼ばれる頻度が高いので一定時間待って最後の呼び出しのみ実行する
 	var previewQueue = null; // キューをストック 
 	var queuePreviewWait = 100; // 0.1秒後に実行の場合 
 	function queuePreview() {
@@ -583,7 +583,7 @@
 	/* CSSエディタ変更周り */
 	// エディタに変化があったらプレビュー予約
 	on("#cssEditor", "change", cssChanged);
-	on("#cssEditor", "keyup", cssChanged);
+	on("#cssEditor", "keydown", cssChanged);
 
 	function cssChanged() {
 		saved = false;
@@ -1296,7 +1296,19 @@
 
 	/* 見出し同期 */
 	on("#headingSyncButton", "click", headingSyncToPreviewer);
+	// エディターをクリックしてもスクロール
 	on("#editor", "click", headingSyncToPreviewer);
+	// プレビュー領域のスクロール追随
+	document.getElementById("editor").onscroll = function() {
+		// editor の 現在のスクロール%を取得
+		var editor = document.getElementById("editor");
+		var percent = editor.scrollTop / (editor.scrollHeight - editor.clientHeight);
+		// previewer の スクロール%を指定
+		var previewer = document.getElementById("previewer");
+		var scrollTop = (previewer.scrollHeight - previewer.clientHeight) * percent;
+		// previewer をスクロール
+		previewer.scrollTop = scrollTop;
+	}
 
 	on("#previewer", "previewed", function(e) {
 		if (isEditMode()) {
@@ -1621,7 +1633,7 @@
 	});
 	
 	// FF, IE向け
-	on("#pasteArea", "keyup",function(e){
+	on("#pasteArea", "keydown",function(e){
 		e.preventDefault();
 		
 		var dummyElement = document.createElement("div");
