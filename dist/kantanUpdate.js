@@ -81,8 +81,11 @@ kantanUpdate({
 "    line-height: 1.9;\n" + 
 "    background-color: white;\n" + 
 "    padding: 45px;\n" + 
-"    /* font-smoothing hack */\n" + 
-"    transform: rotate(0.01deg);\n" + 
+"    /* フォントアンチエイリアス */\n" + 
+"    transform: rotate(0.0001deg);\n" + 
+"    text-shadow:0 0 0.1px rgba(0, 0, 0, 0.5);\n" + 
+"    /* 記事が浮き上がるように */\n" + 
+"    box-shadow: 0 2px 5px 0 rgba(0,0,0,.2)\n" + 
 "}\n" + 
 "#previewer > *:first-child {\n" + 
 "    margin-top: 0 !important;\n" + 
@@ -148,30 +151,6 @@ kantanUpdate({
 "h6:hover a.anchor {\n" + 
 "    background: url(\"para.png\") no-repeat 10px center;\n" + 
 "    text-decoration: none;\n" + 
-"}\n" + 
-"h1 tt,\n" + 
-"h1 code {\n" + 
-"    font-size: inherit;\n" + 
-"}\n" + 
-"h2 tt,\n" + 
-"h2 code {\n" + 
-"    font-size: inherit;\n" + 
-"}\n" + 
-"h3 tt,\n" + 
-"h3 code {\n" + 
-"    font-size: inherit;\n" + 
-"}\n" + 
-"h4 tt,\n" + 
-"h4 code {\n" + 
-"    font-size: inherit;\n" + 
-"}\n" + 
-"h5 tt,\n" + 
-"h5 code {\n" + 
-"    font-size: inherit;\n" + 
-"}\n" + 
-"h6 tt,\n" + 
-"h6 code {\n" + 
-"    font-size: inherit;\n" + 
 "}\n" + 
 "h1 {\n" + 
 "    line-height:1.4;\n" + 
@@ -417,9 +396,9 @@ kantanUpdate({
 "    margin: 0 2px;\n" + 
 "    padding: 0 5px;\n" + 
 "    white-space: nowrap;\n" + 
-"    border: 1px solid #eaeaea;\n" + 
+"    font-size: 13px;\n" + 
 "    background-color: #f8f8f8;\n" + 
-"    border-radius: 3px;\n" + 
+"    color: #d05;\n" + 
 "}\n" + 
 "pre code {\n" + 
 "    margin: 0;\n" + 
@@ -427,24 +406,21 @@ kantanUpdate({
 "    white-space: pre-wrap;\n" + 
 "    border: none;\n" + 
 "    background: transparent;\n" + 
+"    color: inherit;\n" + 
 "}\n" + 
 ".highlight pre {\n" + 
-"    background-color: #f8f8f8;\n" + 
-"    border: 1px solid #cccccc;\n" + 
+"    background-color: #f5f5f5;\n" + 
 "    font-size: 13px;\n" + 
 "    line-height: 19px;\n" + 
 "    overflow: auto;\n" + 
 "    padding: 6px 10px;\n" + 
-"    border-radius: 3px;\n" + 
 "}\n" + 
 "pre {\n" + 
-"    background-color: #f8f8f8;\n" + 
-"    border: 1px solid #cccccc;\n" + 
+"    background-color: #f5f5f5;\n" + 
 "    font-size: 12px;\n" + 
 "    font-family: \"SFMono-Regular\",Consolas,\"Liberation Mono\",Menlo,Courier,monospace;\n" + 
 "    line-height: 1.8;\n" + 
 "    overflow: auto;\n" + 
-"    border-radius: 1px;\n" + 
 "    padding: 1em 32px;\n" + 
 "    margin: 1.5em -32px;\n" + 
 "}\n" + 
@@ -487,6 +463,7 @@ kantanUpdate({
 "    border-radius: 0px;\n" + 
 "    margin: 1em 0px 1em;\n" + 
 "}\n" + 
+"\n" + 
 "@media print {\n" + 
 "    nav {\n" + 
 "        display: none;\n" + 
@@ -496,6 +473,8 @@ kantanUpdate({
 "    }\n" + 
 "    #previewer {\n" + 
 "        border: 0;\n" + 
+"        width:100%;\n" + 
+"        box-shadow: 0 0 black;\n" + 
 "    }\n" + 
 "}\n" + 
 "\n" + 
