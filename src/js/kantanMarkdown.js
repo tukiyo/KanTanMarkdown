@@ -1296,6 +1296,7 @@
 
 	/* 見出し同期 */
 	on("#headingSyncButton", "click", headingSyncToPreviewer);
+	on("#editor", "click", headingSyncToPreviewer);
 
 	on("#previewer", "previewed", function(e) {
 		if (isEditMode()) {
