@@ -18,15 +18,29 @@
     display: none;
 }
 .previewMode #previewer {
-
 }
+
+@media (max-width: 770px) {
+    #previewer {
+        width:80vw
+    }
+}
+@media (max-width: 480px) {
+    #previewer {
+        width:95vw
+    }
+}
+
 #previewer {
+    min-height: 97%;
+    max-width: 800px;
     word-wrap: break-word;
-    font-family: Helvetica, arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
+    color: #333;
+    line-height: 1.9;
     background-color: white;
     padding: 45px;
+    /* font-smoothing hack */
+    transform: rotate(0.01deg);
 }
 #previewer > *:first-child {
     margin-top: 0 !important;
@@ -34,6 +48,26 @@
 #previewer > *:last-child {
     margin-bottom: 0 !important;
 }
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: -apple-system, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;
+	background-color: #f6f6f4;
+	font-size: 1.4rem;
+	color: #333;
+}
+h2 {
+	border-bottom: 1px;
+}
+#editor {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 1.5;
+	color: rgb(34, 34, 34);
+	padding: 10px;
+}
+
 a {
     color: #4183C4;
 }
@@ -57,6 +91,7 @@ h4,
 h5,
 h6 {
     margin: 20px 0 10px;
+    line-height:1.5;
     padding: 0;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
@@ -97,16 +132,15 @@ h6 code {
     font-size: inherit;
 }
 h1 {
-    font-size: 28px;
-    color: black;
+    line-height:1.4;
+    font-size: 40px;
 }
 h2 {
-    font-size: 24px;
+    font-size: 25px;
     border-bottom: 1px solid #cccccc;
-    color: black;
 }
 h3 {
-    font-size: 18px;
+    font-size: 22px;
 }
 h4 {
     font-size: 16px;
@@ -129,9 +163,9 @@ pre {
     margin: 15px 0;
 }
 hr {
-    background-color: #e7e7e7;
+    background-color: #ddd;
     border: 0 none;
-    height: 4px;
+    height: 2px;
     padding: 0;
 }
 #previewer > h2:first-child {
@@ -364,11 +398,13 @@ pre code {
 pre {
     background-color: #f8f8f8;
     border: 1px solid #cccccc;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 12px;
+    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    line-height: 1.8;
     overflow: auto;
-    padding: 6px 10px;
-    border-radius: 3px;
+    border-radius: 1px;
+    padding: 1em 32px;
+    margin: 1.5em -32px;
 }
 pre code,
 pre tt {
