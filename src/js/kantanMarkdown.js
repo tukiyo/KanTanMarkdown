@@ -332,7 +332,7 @@
 	// 自動更新がONならプレビューする
 	// ただし、onkeyupなど呼ばれる頻度が高いので一定時間待って最後の呼び出しのみ実行する
 	var previewQueue = null; // キューをストック 
-	var queuePreviewWait = 300; // 0.3秒後に実行の場合 
+	var queuePreviewWait = 100; // 0.1秒後に実行の場合 
 	function queuePreview() {
 		var settingAutoSync = document.getElementById("settingAutoSync");
 		if (!settingAutoSync.checked) {
