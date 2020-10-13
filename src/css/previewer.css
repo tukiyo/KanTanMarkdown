@@ -39,9 +39,8 @@
     line-height: 1.9;
     background-color: white;
     padding: 45px;
-    /* フォントアンチエイリアス */
+    /* アンチエイリアス */
     transform: rotate(0.0001deg);
-    text-shadow:0 0 0.1px rgba(0, 0, 0, 0.5);
     /* 記事が浮き上がるように */
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.2)
 }
