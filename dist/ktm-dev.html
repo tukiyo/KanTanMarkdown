@@ -418,7 +418,7 @@ nav:after {
  * 標準のCSSに戻したいときはCSSを引き継がずに強制アップデートしてください
  * また、CSSの変更はプレビューしないと反映しません。
  */
- 
+
 #leftNav {
     display: visible;
 }
@@ -446,13 +446,15 @@ nav:after {
 }
 
 #previewer {
-    min-height: 97%;
+    min-height: 98%;
     max-width: 800px;
     word-wrap: break-word;
-    color: #3B454E;
+    color: #575757;
     line-height: 1.9;
     background-color: white;
-    padding: 45px;
+    padding: 3em 6em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
     /* アンチエイリアス */
     transform: rotate(0.0001deg);
     /* 記事が浮き上がるように */
@@ -465,12 +467,17 @@ nav:after {
     margin-bottom: 0 !important;
 }
 
+.editMode #previewer {
+    padding: 0em 1em;
+    margin: 0;
+}
+
 html {
 	font-size: 62.5%;
 }
 body {
 	font-family: roboto, sans-serif;
-	background-color: #f6f6f4;
+	background-color: #f8f9fa;
 	font-size: 1.4rem;
         color: #3B454E;
 }
@@ -478,11 +485,11 @@ h2 {
 	border-bottom: 1px;
 }
 #editor {
-	font-family: roboto, sans-serif;
-	font-size: 16px;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 14px;
 	line-height: 1.5;
 	color: rgb(34, 34, 34);
-	padding: 10px;
+	padding: 0.5em 0.5em;
 }
 
 a {
@@ -526,7 +533,7 @@ h6:hover a.anchor {
 }
 h1 {
     line-height:1.4;
-    font-size: 40px;
+    font-size: 32px;
 }
 h2 {
     font-size: 25px;
@@ -789,12 +796,14 @@ pre code {
 }
 pre {
     background-color: #f5f5f5;
+    color: #333;
     font-size: 12px;
     font-family: roboto, sans-serif;
-    line-height: 1.8;
+    line-height: 1.42857143;
     overflow: auto;
-    padding: 1em 32px;
-    margin: 1.5em -32px;
+    padding: 0.5em 1em;
+    margin: .7em -1em;
+    border-radius: 4px;
 }
 pre code,
 pre tt {
@@ -807,26 +816,40 @@ pre tt {
     text-align:center;
 }
 
-.info,
-.warn,
-.alert {
+p.info,
+p.warn,
+p.success,
+p.green,
+p.alert,
+p.blue,
+p.yellow,
+p.red {
     font-size: 14px;
     line-height: 19px;
     padding: .75rem 1.25rem;
     border-radius: .25rem;
     margin: 1rem 0px 1rem 0px;;
 }
-.info {
+.info,
+.blue {
     color: #004085;
     background-color: #cce5ff;
     border: 1px solid #b8daff;
 }
-.warn {
+.success,
+.green {
+    color: #437d5f;
+    background-color: #dff0d8;
+    border: 1px solid #cdeac1;
+}
+.warn,
+.yellow {
     color: #856404;
     background-color: #fff3cd;
     border: 1px solid #ffeeba;
 }
-.alert {
+.alert,
+.red {
     color: #721c24;
     background-color: #f8d7da;
     border: 1px solid #f5c6cb;
@@ -845,6 +868,22 @@ pre tt {
         box-shadow: 0 0 black;
     }
 }
+
+/* START_CODE_TITLE */
+f {
+    display:inline;
+    color: #333;
+    background-color: #ddd;
+    font-size: 0.8em;
+    position: fixed;
+    margin-top: -1.1em;
+    margin-left: -1em;
+    padding: 0 1em;
+}
+f + pre {
+    margin-top: 0;
+}
+/* END_CODE_TITLE */
 
 /*
 

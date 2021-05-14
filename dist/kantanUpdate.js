@@ -12,7 +12,7 @@ kantanUpdate({
 "<head>\n" + 
 "	<meta charset=\"utf-8\">\n" + 
 "	<meta name=\"viewport\" content=\"width=device-width\" />\n" + 
-"	<style>#previewer:after,nav:after{content:\".\";display:block;font-size:0;clear:both;visibility:hidden}body{margin:0;padding:0;position:relative}body.onDragover{border:5px dashed #99cde1}nav{margint:0}nav #leftNav{float:left}nav #rightNav{float:right}nav:after{height:0}#attach{width:100%;border-top:1px solid gray;border-bottom:1px solid gray;display:none}#attach #attachForm{box-sizing:border-box;width:100%;height:100%;display:none}#attach #attachForm input[type=file]{width:100%}#attach #filer{box-sizing:border-box;width:100%;height:150px;overflow:auto;display:none}#attach #filer input{width:300px}#attach #pasteArea{box-sizing:border-box;width:100%;border:1px solid gray;text-align:center}#attach #attachToggleButton,#attach #previewToggleButton{width:50%}#wrapper{overflow:auto}#wrapper #editorTabWrapper{box-sizing:border-box;width:50%;height:100%;float:left;border-top:none;display:none;margin:0;padding:0}#wrapper #editorTabWrapper #editorTabContents{box-sizing:border-box;width:100%;height:calc(100% - 20px);marign:0;padding:0}#wrapper #editorTabWrapper #editorTabContents #cssEditor,#wrapper #editorTabWrapper #editorTabContents #editor{box-sizing:border-box;resize:none;width:100%;height:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;margin:0}#wrapper #editorTabWrapper #editorTabContents #cssEditor{display:none}#wrapper #editorTabWrapper #editorTabs{box-sizing:border-box;border:0;width:100%;height:20px;margin:0;padding:0}#wrapper #editorTabWrapper #editorTabs li{box-sizing:border-box;list-style:none;float:left;width:50%;height:100%;text-align:center;margin-left:0;border-top:0;border-right:1px solid gray;border-bottom:1px solid gray;border-left:1px solid gray;border-radius:0 0 5px 5px}#importDialog,.popupMenu{border:1px solid gray;position:absolute}#wrapper #editorTabWrapper #editorTabs li a{display:block;width:100%;height:100%;text-decoration:none;color:#000}#previewer,.previewMode #previewer{height:auto;overflow:auto}#wrapper #editorTabWrapper #editorTabs li.selected{background-color:#7a9cd3}#wrapper #editorTabWrapper.fullWidth{width:100%}#previewer{box-sizing:border-box;margin:0 auto}.editMode #previewer{width:50%;height:100%}#previewer:empty{border:0}#previewer:focus{outline:0}#previewer:after{height:0}.popupMenu{display:none;margin:0;padding:0;background-color:#fff}.popupMenu>ul{list-style-type:none;margin:0;padding:0}.popupMenu>ul>li{margin:0}#onlineMenu>ul>li>a{box-sizing:border-box;text-decoration:none;display:block;margin:0;padding:10px;width:100%;height:100%;color:#000}#onlineMenu>ul>li>a:hover{background-color:#99cde1}#importDialog{width:440px;padding:20px;display:none;background-color:#fff}#importDialog ul.buttonArea{list-style-type:none;margin:0;padding:0}#importDialog ul.buttonArea li{display:block;float:left}#importDialog ul.buttonArea li button{height:35px;padding-left:20px;padding-right:20px}.initialState #editorTabWrapper{display:block!important;width:100%!important}.initialState #editor{margin-top:5px!important;font-size:large!important;height:90vh!important}.initialState #attach,.initialState #editorTabs,.initialState #previewer,.initialState nav{display:none!important}@media print{nav{display:none}#previewer{border:0!important;margin:0!important;padding:0!important}}#drawArea,#drawArea #canvasWrapper #baseCanvas,#drawArea #canvasWrapper #mainCanvas,#drawArea #canvasWrapper #workCanvas{position:absolute}#drawArea{top:0;left:0;width:100vw;height:100vh;background-color:gray;display:none}#drawArea #canvasWrapper{box-sizing:border-box;float:left;width:calc(100% - 200px);height:100%;overflow:auto;position:relative;padding:5px 15px 15px 5px}#drawArea .color3,#drawArea .color9{box-sizing:border-box;float:left;border:1px solid #000;margin:0;padding:0}#drawArea #drawControllWrapper{position:relative;background-color:#fff;float:left;width:200px;height:100%}#drawArea div{width:100%}#drawArea button{display:block;width:100%;border:1px solid #000;background-color:#fff}#drawArea button.selected{background-color:#7a9cd3}#drawArea .float50{box-sizing:border-box;float:left;width:50%}#drawArea .float25{box-sizing:border-box;float:left;width:25%}#drawArea .color9{width:11.1%}#drawArea .color3{width:33.3%}#drawArea .color[name=c_ff0000]{background-color:red}#drawArea .color[name=c_0000ff]{background-color:#00f}#drawArea .color[name=c_34A853]{background-color:#34A853}#drawArea .color[name=c_000000]{background-color:#000}#drawArea .color[name=c_clear],#drawArea .color[name=c_ffffff]{background-color:#fff}#drawArea .clearfix:after{content:\".\";display:block;height:0;font-size:0;clear:both;visibility:hidden}</style>\n" + 
+"	<style>#previewer:after,nav:after{content:\".\";display:block;font-size:0;clear:both;visibility:hidden}body{margin:0;padding:0;position:relative}body.onDragover{border:5px dashed #99cde1}nav{margint:0}nav #leftNav{float:left}nav #rightNav{float:right}nav:after{height:0}#attach{width:100%;border-top:1px solid gray;border-bottom:1px solid gray;display:none}#attach #attachForm{box-sizing:border-box;width:100%;height:100%;display:none}#attach #attachForm input[type=file]{width:100%}#attach #filer{box-sizing:border-box;width:100%;height:150px;overflow:auto;display:none}#attach #filer input{width:300px}#attach #pasteArea{box-sizing:border-box;width:100%;border:1px solid gray;text-align:center}#attach #attachToggleButton,#attach #previewToggleButton{width:50%}#wrapper{overflow:auto}#wrapper #editorTabWrapper{box-sizing:border-box;width:50%;height:100%;float:left;border-top:none;display:none;margin:0;padding:0}#wrapper #editorTabWrapper #editorTabContents{box-sizing:border-box;width:100%;height:calc(100% - 20px);marign:0;padding:0}#wrapper #editorTabWrapper #editorTabContents #cssEditor,#wrapper #editorTabWrapper #editorTabContents #editor{box-sizing:border-box;resize:none;width:100%;height:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;margin:0}#wrapper #editorTabWrapper #editorTabContents #cssEditor{display:none}#wrapper #editorTabWrapper #editorTabs{box-sizing:border-box;border:0;width:100%;height:20px;margin:0;padding:0}#wrapper #editorTabWrapper #editorTabs li{box-sizing:border-box;list-style:none;float:left;width:50%;height:100%;text-align:center;margin-left:0;border-top:0;border-right:1px solid gray;border-bottom:1px solid gray;border-left:1px solid gray;border-radius:0 0 5px 5px}#importDialog,.popupMenu{border:1px solid gray;position:absolute}#wrapper #editorTabWrapper #editorTabs li a{display:block;width:100%;height:100%;text-decoration:none;color:#000}#previewer,.previewMode #previewer{height:auto;overflow:auto}#wrapper #editorTabWrapper #editorTabs li.selected{background-color:#7a9cd3}#wrapper #editorTabWrapper.fullWidth{width:100%}#previewer{box-sizing:border-box;margin:0 auto}.editMode #previewer{width:50%;height:100%}#previewer:empty{border:0}#previewer:focus{outline:0}#previewer:after{height:0}.popupMenu{display:none;margin:0;padding:0;background-color:#fff}.popupMenu>ul{list-style-type:none;margin:0;padding:0}.popupMenu>ul>li{margin:0}#onlineMenu>ul>li>a{box-sizing:border-box;text-decoration:none;display:block;margin:0;padding:10px;width:100%;height:100%;color:#000}#onlineMenu>ul>li>a:hover{background-color:#99cde1}#importDialog{width:440px;padding:20px;display:none;background-color:#fff}#importDialog ul.buttonArea{list-style-type:none;margin:0;padding:0}#importDialog ul.buttonArea li{display:block;float:left}#importDialog ul.buttonArea li button{height:35px;padding-left:20px;padding-right:20px}.initialState #editorTabWrapper{display:block!important;width:100%!important}.initialState #editor{margin-top:5px!important;font-size:large!important;height:90vh!important}.initialState #attach,.initialState #editorTabs,.initialState #previewer,.initialState nav{display:none!important}@media print{nav{display:none}#previewer{border:0!important;margin:0!important;padding:0!important}}#drawArea,#drawArea #canvasWrapper #baseCanvas,#drawArea #canvasWrapper #mainCanvas,#drawArea #canvasWrapper #workCanvas{position:absolute}#drawArea{top:0;left:0;width:100vw;height:100vh;background-color:gray;display:none}#drawArea #canvasWrapper{box-sizing:border-box;float:left;width:calc(100% - 200px);height:100%;overflow:auto;position:relative;padding:5px 15px 15px 5px}#drawArea .color3,#drawArea .color9{float:left;border:1px solid #000;margin:0;padding:0}#drawArea #drawControllWrapper{position:relative;background-color:#fff;float:left;width:200px;height:100%}#drawArea div{width:100%}#drawArea button{display:block;width:100%;border:1px solid #000;background-color:#fff}#drawArea button.selected{background-color:#7a9cd3}#drawArea .float50{box-sizing:border-box;float:left;width:50%}#drawArea .float25{box-sizing:border-box;float:left;width:25%}#drawArea .color9{box-sizing:border-box;width:11.1%}#drawArea .color3{box-sizing:border-box;width:33.3%}#drawArea .color[name=c_ff0000]{background-color:red}#drawArea .color[name=c_0000ff]{background-color:#00f}#drawArea .color[name=c_34A853]{background-color:#34A853}#drawArea .color[name=c_000000]{background-color:#000}#drawArea .color[name=c_clear],#drawArea .color[name=c_ffffff]{background-color:#fff}#drawArea .clearfix:after{content:\".\";display:block;height:0;font-size:0;clear:both;visibility:hidden}</style>\n" + 
 "	<style id=\"previewerStyle\"></style>\n" + 
 "	<title>無題</title>\n" + 
 "</head>\n" + 
@@ -46,7 +46,7 @@ kantanUpdate({
 " * 標準のCSSに戻したいときはCSSを引き継がずに強制アップデートしてください\n" + 
 " * また、CSSの変更はプレビューしないと反映しません。\n" + 
 " */\n" + 
-" \n" + 
+"\n" + 
 "#leftNav {\n" + 
 "    display: visible;\n" + 
 "}\n" + 
@@ -74,13 +74,15 @@ kantanUpdate({
 "}\n" + 
 "\n" + 
 "#previewer {\n" + 
-"    min-height: 97%;\n" + 
+"    min-height: 98%;\n" + 
 "    max-width: 800px;\n" + 
 "    word-wrap: break-word;\n" + 
-"    color: #3B454E;\n" + 
+"    color: #575757;\n" + 
 "    line-height: 1.9;\n" + 
 "    background-color: white;\n" + 
-"    padding: 45px;\n" + 
+"    padding: 3em 6em;\n" + 
+"    margin-top: 1em;\n" + 
+"    margin-bottom: 0.3em;\n" + 
 "    /* アンチエイリアス */\n" + 
 "    transform: rotate(0.0001deg);\n" + 
 "    /* 記事が浮き上がるように */\n" + 
@@ -93,12 +95,17 @@ kantanUpdate({
 "    margin-bottom: 0 !important;\n" + 
 "}\n" + 
 "\n" + 
+".editMode #previewer {\n" + 
+"    padding: 0em 1em;\n" + 
+"    margin: 0;\n" + 
+"}\n" + 
+"\n" + 
 "html {\n" + 
 "	font-size: 62.5%;\n" + 
 "}\n" + 
 "body {\n" + 
 "	font-family: roboto, sans-serif;\n" + 
-"	background-color: #f6f6f4;\n" + 
+"	background-color: #f8f9fa;\n" + 
 "	font-size: 1.4rem;\n" + 
 "        color: #3B454E;\n" + 
 "}\n" + 
@@ -106,11 +113,11 @@ kantanUpdate({
 "	border-bottom: 1px;\n" + 
 "}\n" + 
 "#editor {\n" + 
-"	font-family: roboto, sans-serif;\n" + 
-"	font-size: 16px;\n" + 
+"	font-family: Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n" + 
+"	font-size: 14px;\n" + 
 "	line-height: 1.5;\n" + 
 "	color: rgb(34, 34, 34);\n" + 
-"	padding: 10px;\n" + 
+"	padding: 0.5em 0.5em;\n" + 
 "}\n" + 
 "\n" + 
 "a {\n" + 
@@ -154,7 +161,7 @@ kantanUpdate({
 "}\n" + 
 "h1 {\n" + 
 "    line-height:1.4;\n" + 
-"    font-size: 40px;\n" + 
+"    font-size: 32px;\n" + 
 "}\n" + 
 "h2 {\n" + 
 "    font-size: 25px;\n" + 
@@ -417,12 +424,14 @@ kantanUpdate({
 "}\n" + 
 "pre {\n" + 
 "    background-color: #f5f5f5;\n" + 
+"    color: #333;\n" + 
 "    font-size: 12px;\n" + 
 "    font-family: roboto, sans-serif;\n" + 
-"    line-height: 1.8;\n" + 
+"    line-height: 1.42857143;\n" + 
 "    overflow: auto;\n" + 
-"    padding: 1em 32px;\n" + 
-"    margin: 1.5em -32px;\n" + 
+"    padding: 0.5em 1em;\n" + 
+"    margin: .7em -1em;\n" + 
+"    border-radius: 4px;\n" + 
 "}\n" + 
 "pre code,\n" + 
 "pre tt {\n" + 
@@ -435,26 +444,40 @@ kantanUpdate({
 "    text-align:center;\n" + 
 "}\n" + 
 "\n" + 
-".info,\n" + 
-".warn,\n" + 
-".alert {\n" + 
+"p.info,\n" + 
+"p.warn,\n" + 
+"p.success,\n" + 
+"p.green,\n" + 
+"p.alert,\n" + 
+"p.blue,\n" + 
+"p.yellow,\n" + 
+"p.red {\n" + 
 "    font-size: 14px;\n" + 
 "    line-height: 19px;\n" + 
 "    padding: .75rem 1.25rem;\n" + 
 "    border-radius: .25rem;\n" + 
 "    margin: 1rem 0px 1rem 0px;;\n" + 
 "}\n" + 
-".info {\n" + 
+".info,\n" + 
+".blue {\n" + 
 "    color: #004085;\n" + 
 "    background-color: #cce5ff;\n" + 
 "    border: 1px solid #b8daff;\n" + 
 "}\n" + 
-".warn {\n" + 
+".success,\n" + 
+".green {\n" + 
+"    color: #437d5f;\n" + 
+"    background-color: #dff0d8;\n" + 
+"    border: 1px solid #cdeac1;\n" + 
+"}\n" + 
+".warn,\n" + 
+".yellow {\n" + 
 "    color: #856404;\n" + 
 "    background-color: #fff3cd;\n" + 
 "    border: 1px solid #ffeeba;\n" + 
 "}\n" + 
-".alert {\n" + 
+".alert,\n" + 
+".red {\n" + 
 "    color: #721c24;\n" + 
 "    background-color: #f8d7da;\n" + 
 "    border: 1px solid #f5c6cb;\n" + 
@@ -473,6 +496,22 @@ kantanUpdate({
 "        box-shadow: 0 0 black;\n" + 
 "    }\n" + 
 "}\n" + 
+"\n" + 
+"/* START_CODE_TITLE */\n" + 
+"f {\n" + 
+"    display:inline;\n" + 
+"    color: #333;\n" + 
+"    background-color: #ddd;\n" + 
+"    font-size: 0.8em;\n" + 
+"    position: fixed;\n" + 
+"    margin-top: -1.1em;\n" + 
+"    margin-left: -1em;\n" + 
+"    padding: 0 1em;\n" + 
+"}\n" + 
+"f + pre {\n" + 
+"    margin-top: 0;\n" + 
+"}\n" + 
+"/* END_CODE_TITLE */\n" + 
 "\n" + 
 "/*\n" + 
 "\n" + 
